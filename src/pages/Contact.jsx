@@ -14,21 +14,21 @@ function Contact() {
       <div className="mt-[100px] px-10 w-full">
         <ul className="mx-auto">
           <Link to="https://t.me/ID_24806">
-            <li className="mx-auto flex items-center bg-[#2C3D54] text-[#DDD9CE] text-font rounded-lg text-center backdrop-blur-sm shadow-2xl mt-5 h-[60px]">
+            <li className="mx-auto flex links items-center bg-[#2C3D54] text-[#DDD9CE] text-font rounded-lg text-center backdrop-blur-sm shadow-2xl mt-5 h-[60px]">
               <a className="mx-auto" href="">
                 Telegram
               </a>
             </li>
           </Link>
           <Link to="https://github.com/Abdullohn001">
-            <li className="mx-auto flex items-center bg-[#2C3D54] text-[#DDD9CE] text-font rounded-lg text-center backdrop-blur-sm shadow-2xl mt-5 h-[60px]">
+            <li className="mx-auto flex links items-center bg-[#2C3D54] text-[#DDD9CE] text-font rounded-lg text-center backdrop-blur-sm shadow-2xl mt-5 h-[60px]">
               <a className="mx-auto" href="">
                 Git Hub
               </a>
             </li>
           </Link>
           <Link to="https://www.facebook.com/profile.php?id=61556235622414&mibextid=ZbWKwL">
-            <li className="mx-auto flex items-center bg-[#2C3D54] text-[#DDD9CE] text-font rounded-lg text-center backdrop-blur-sm shadow-2xl mt-5 h-[60px]">
+            <li className="mx-auto flex links items-center bg-[#2C3D54] text-[#DDD9CE] text-font rounded-lg text-center backdrop-blur-sm shadow-2xl mt-5 h-[60px]">
               <a
                 className="mx-auto"
                 href="https://www.facebook.com/profile.php?id=61556235622414&mibextid=ZbWKwL"
@@ -38,7 +38,7 @@ function Contact() {
             </li>
           </Link>
           <Link to="">
-            <li className="mx-auto flex items-center bg-[#2C3D54] text-[#DDD9CE] text-font rounded-lg text-center backdrop-blur-sm shadow-2xl mt-5 h-[60px]">
+            <li className="mx-auto flex links items-center bg-[#2C3D54] text-[#DDD9CE] text-font rounded-lg text-center mt-5 h-[60px]">
               <a className="mx-auto" href="">
                 Gmail
               </a>

@@ -70,7 +70,24 @@
       letter-spacing: 2px;
     }
   }
-  .animate-avatar{
-    
+
+  .links{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
+
+  .animate-avatar{
+    font-family: "Sansita";
+
+    &::after{
+      content: "";
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 6px dashed ;
+      border-color: linear-gradient(124deg, rgba(136,136,136,1) 0%, rgba(66,50,255,1) 100%);
+      position: absolute;
+      animation: animate 15s linear infinite;
+    }
+  }
+
 }

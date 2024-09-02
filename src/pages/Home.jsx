@@ -4,8 +4,35 @@ import { BiSolidFileHtml, BiSolidFileJson } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { MdHttps } from "react-icons/md";
+import { useState, useEffect } from "react";
 
 function Home() {
+  const [reactValue, setReactValue] = useState(0);
+  const [jsValue, setJsValue] = useState(0);
+  const [tsValue, setTsValue] = useState(0);
+
+  useEffect(() => {
+    const maxSkillLevel = 85;
+    const maxjsvalue = 80;
+    const maxtsvalue = 30;
+
+    const interval = setInterval(() => {
+      setReactValue((prev) => (prev < maxSkillLevel ? prev + 1 : prev));
+      setJsValue((prev) => (prev < maxjsvalue ? prev + 1 : prev));
+      setTsValue((prev) => (prev < maxtsvalue ? prev + 1 : prev));
+    }, 20); 
+
+    if (
+      reactValue >= maxSkillLevel &&
+      jsValue >= maxSkillLevel &&
+      tsValue >= maxSkillLevel
+    ) {
+      clearInterval(interval);
+    }
+
+    return () => clearInterval(interval); 
+  }, [reactValue, jsValue, tsValue]);
+
   return (
     <div>
       <div className="mx-auto max-w-[400px]">
@@ -18,18 +45,19 @@ function Home() {
           <div className="flex max-h-32 w-[200px] flex-col">
             <label htmlFor="">React</label>
             <input
+              className="range w-full bg-slate-500 range-success"
               type="range"
+              value={reactValue}
+              readOnly
               min={0}
               max="100"
-              value="85"
-              className="range w-full bg-slate-500 range-success"
             />
             <label htmlFor="">JavaScript</label>
             <input
               type="range"
               min={0}
               max="100"
-              value="90"
+              value={jsValue}
               className="range w-full bg-slate-500 range-success"
             />
             <label htmlFor="">TypeScript</label>
@@ -37,8 +65,8 @@ function Home() {
               type="range"
               min={0}
               max="100"
-              value="30"
-              className="range w-full bg-yellow-500 range-success"
+              value={tsValue}
+              className="range w-full bg-slate-500 range-success"
             />
           </div>
         </div>
