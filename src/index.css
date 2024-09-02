@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+  @import url(https://fonts.googleapis.com/css2?family=Sansita:wght@100;200;300;400;500;600;800;900&display=swap);
+  @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .avitar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      left: calc(50% - 5px);
+      box-shadow: 50px 10px 12px 4px #ffffff, -45px -50px 11px 2px #fff,
+        -35px 40px 15px #ff0, -55px 0 13px #fff, 45px 35px 3px #ff0,
+        -40px -40px 6px #ff0, 40px -40px 14px #fff, 55px -59px 3px #fff;
+      animation: animate 10s linear infinite;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      left: calc(50% - 5px);
+      box-shadow: 50px 10px 12px 4px #ffffff, -55px -50px 11px 2px #fff,
+        -15px 50px 15px #ff0, -55px 0 13px #fff, 45px 35px 3px #ff0,
+        -40px -40px 6px #ff0, 40px -40px 14px #fff, 55px -59px 12px #fff;
+      animation: animate 10s linear infinite;
+    }
+  }
+  .text {
+    text-align: center;
+    padding-top: 32%;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
+  .font {
+    width: 100px;
+    height: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(183, 183, 183, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 50%;
+    font-family: "Sansita";
+  }
+  .text-font {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: larger;
+    &:hover{
+      letter-spacing: 2px;
+    }
+  }
+  .animate-avatar{
+    
+  }
+}
