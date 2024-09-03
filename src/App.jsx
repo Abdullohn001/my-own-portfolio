@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout";
 
 //pages
-import { Home, About, Products,Contact } from "./pages";
+import { Home, About, Products, Contact } from "./pages";
 
 function App() {
   const routes = createBrowserRouter([
@@ -22,13 +22,13 @@ function App() {
           element: <About />,
         },
         {
-          path:"contact",
-          element:<Contact/>
+          path: "contact",
+          element: <Contact />,
         },
         {
           path: "products",
-          element: <Products/>
-        }
+          element: <Products />,
+        },
       ],
     },
   ]);

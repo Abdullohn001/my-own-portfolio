@@ -66,28 +66,52 @@
     font-family: "Open Sans";
     font-weight: 400;
     font-size: larger;
-    &:hover{
+    &:hover {
       letter-spacing: 2px;
     }
   }
 
-  .links{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  .links {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 
-  .animate-avatar{
+  .animate-avatar {
     font-family: "Sansita";
-
-    &::after{
+    &::after {
       content: "";
       width: 130px;
       height: 130px;
       border-radius: 50%;
-      border: 6px dashed ;
-      border-color: linear-gradient(124deg, rgba(136,136,136,1) 0%, rgba(66,50,255,1) 100%);
+      border: 6px dashed;
+      border-color: linear-gradient(
+        124deg,
+        rgba(136, 136, 136, 1) 0%,
+        rgba(66, 50, 255, 1) 100%
+      );
       position: absolute;
       animation: animate 15s linear infinite;
     }
   }
-
+  .border-rounded {
+    border-top-left-radius: 10px;
+    text-align: center;
+  }
+  .js {
+    background-color: yellow;
+    color: black;
+  }
+  .redux {
+    @apply bg-blue-200 text-blue-600;
+  }
+  .html {
+    @apply bg-emerald-300 text-emerald-600;
+  }
+  .next{
+    @apply bg-black text-blue-500
+  }
+  .react{
+    @apply bg-base-200 text-blue-400
+  }
 }
