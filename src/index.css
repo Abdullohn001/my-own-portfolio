@@ -32,6 +32,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
+      
       left: calc(50% - 5px);
       box-shadow: 50px 10px 12px 4px #ffffff, -55px -50px 11px 2px #fff,
         -15px 50px 15px #ff0, -55px 0 13px #fff, 45px 35px 3px #ff0,
